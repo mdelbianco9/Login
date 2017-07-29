@@ -18,10 +18,9 @@ function login() {
 	var password = document.getElementById('password').value
 		for (var i = 0; i < userdata.length; i++){
 			if (username == userdata[i].username && password == userdata[i].password) {
-			document.getElementById('display').textContent = 'success';
-			}	else {
-				document.getElementById('display').textContent = 'get da fuq outta here';
-					}
+			alert("Welcome " + username);
+			console.log("good job");
+			}	
 		}
 };
 
@@ -39,9 +38,13 @@ function register() {
 		} else if (regpassword.length < 8) {
 			alert('Your password is too short, make it 8 or more characters');
 			return
+		} else {
+			alert("You Are All Signed Up");
+	
 		}
 	}
+
 	userdata.push(newuser);
-	document.getElementById('show').textContent = 'you got it';
 	console.log(userdata);
+
 };

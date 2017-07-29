@@ -13,6 +13,7 @@
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/	font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Montserrat" rel="stylesheet">
     <title>Login</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -22,24 +23,25 @@
 
   </head>
   <body>
+<div class="row">
+  <div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 inner">
+    <h1>Demfy</h1>
+    <div class="login">
+      <input type="username" name="username" placeholder="Username" id="username" class="form-control">
+      <input type="password" name="passeord" placeholder="Password" id="password" class="form-control">
+      <button class="button1 btn" onclick="login()">Login</button>
+    </div>
 
-  <h1>Welcome, please login</h1>
+    <div class="register">
+      <h4>Sign up</h4>
+      <input type="username" name="username" placeholder="Username" id="regname" class="form-control">
+      <input type="password" name="passeord" placeholder="Password" id="regpw" class="form-control" >
+      <h6>Password must be 8 characters or longer</h6>
+      <button class="button2 btn" onclick="register()">Register</button>
 
-  <div>
-    <input type="username" name="username" id="username">
-    <input type="password" name="passeord" id="password">
-    <button onclick="login()">Login</button>
+    </div>
   </div>
-
-  <h1 id="display"></h1>
-
-  <div>
-    <input type="username" name="username" id="regname">
-    <input type="password" name="passeord" id="regpw">
-    <button onclick="register()">Register</button>
-  </div>
-
-  <h1 id="show"></h1>
+</div>
 
   
 
