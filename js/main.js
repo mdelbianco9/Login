@@ -20,7 +20,11 @@ function login() {
 			if (username == userdata[i].username && password == userdata[i].password) {
 			alert("Welcome " + username);
 			console.log("good job");
-			}	
+			}	else if (username != userdata[i].username && password == userdata[i].password) {
+					alert('Wrong Username or Password');
+			}	else if (username == userdata[i].username && password != userdata[i].password) {
+				alert('Wrong Username or Password');
+			} 
 		}
 };
 
@@ -43,11 +47,11 @@ function register() {
 		} else if (regpassword.length < 8) {
 			alert('Your password is too short, make it 8 or more characters');
 			return
-			// is suppose to add the new username and pw to the array
 		} 
 
 	}
 	console.log(userdata);
-	alert("You Are Registered! Please log in");
+	alert('You Are Registered! Please log in');
+	// is suppose to add the new username and pw to the array
 	userdata.push(newuser);
 };
